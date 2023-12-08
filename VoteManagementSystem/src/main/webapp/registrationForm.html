@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<style>
+	form
+	{
+		border:solid;
+		border-color: black;
+		border-width: 3px;
+		width: 295px;
+		margin-top: 55px;
+		border-radius: 10px;
+		margin-left: 495px;
+		padding-left: 55px;
+	}
+	
+	input
+	{
+		width: 230px;
+		height: 27px;
+		border-radius: 2px;
+	
+	}
+	
+	button
+	{
+		border-radius: 5px;
+		width: 100px;
+		height: 30px;
+		opacity: 0.9;
+	}
+
+	#b1
+	{
+		background-color: powderblue;
+	}
+
+	#b2
+	{
+		background-color: powderblue;	
+	}
+
+	h1
+	{
+		margin-left: 22px;
+	}
+
+	div
+	{
+		margin-left: 15px;
+	}
+	
+	body
+	{
+		background-image: url('images/bg6.jpg');
+		background-size: cover;
+
+	}
+
+	#show
+	{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+		width: 17px;
+		height: 17px;
+	
+
+	}
+
+</style>
+
+<body>
+	<form action="register" method="post">
+		<u><h1>Register Here</h1></u>
+	<b> First Name <br><label><input type="text" name="fname" placeholder=" Enter First Name" required></label><br><br>
+		Last Name <br><label><input type="text" name="lname" placeholder=" Enter Last Name" required></label><br><br>
+		Email <br><label><input type="email" name="email" placeholder=" Enter Email Address" required></label><br><br>
+
+		Password <br><label><input id="password" type="password" name="password" placeholder=" Enter Password" required></label><br><br>
+		
+		DOB <br><label><input type="date" name="dob" required></label><br><br>
+	<div>
+		<button id="b1" type="submit" value="submit">REGISTER </button>
+		<button id="b2" type="reset" value="reset">RESET</button><br>
+	
+		<p1>Already have an account? <a href="loginForm.html">sign in</a></p1><br><br>
+	</div>
+	</form>
+
+</body>
+</html>

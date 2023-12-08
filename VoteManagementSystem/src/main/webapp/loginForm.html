@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<style>
+	form
+	{
+		border:solid;
+		border-color: black;
+		border-width: 3px;
+		width: 255px;
+		margin-top: 150px;
+		border-radius: 10px;
+		margin-left: 540px;
+		padding-left: 20px;
+
+	}
+	
+	input
+	{
+		width: 230px;
+		height: 27px;
+		border-radius: 2px;
+	
+	}
+	
+	button
+	{
+		border-radius: 5px;
+		width: 100px;
+		height: 30px;
+		opacity: 0.9;
+	}
+
+	#b1
+	{
+		background-color: powderblue;
+	}
+
+	#b2
+	{
+		background-color: powderblue;	
+	}
+
+	a
+	{
+		margin-left: 45px;
+	}
+	h1
+	{
+		margin-left: 75px;
+	}
+
+	div
+	{
+		margin-left: 15px;
+	}
+	
+	body
+	{
+		background-image: url('images/bg6.jpg');
+		background-size: cover;
+	}
+
+	#show
+	{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+		width: 17px;
+		height: 17px;
+
+	
+
+	}
+	
+
+</style>
+
+<body >
+	<form action="loginVoter" method="post">
+		<u><h1> Login</h1></u>
+
+	<b> Username <br><label><input type="email" name="uname" placeholder=" Enter Username" required></label><br><br>
+		
+
+		Password <br><label><input id="pass" type="Password" name="password" placeholder=" Enter Password" required></label><br></b>
+		
+		<input id="show" type="checkbox" onclick="myFunction()">Show Password</input><br>
+
+	<div>
+		<button id="b1" type="submit" value="submit">LOGIN </button>
+		<button id="b2" type="reset" value="reset">CANCEL</button><br><br>
+	
+		<p1><a href="registrationForm.html">Create an account</a></p1><br><br>
+	</div>
+	</form>
+
+
+	<script type="text/javascript">
+		function myFunction() {
+		var x = document.getElementById("pass");
+		if (x.type === "password") {
+		x.type = "text";
+		} else {
+		x.type = "password";
+		}
+		}
+	</script>
+
+
+</body>
+</html>
